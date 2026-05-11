@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research — K. R. Kaza</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #eff6ff;
+      color: #1e293b;
+    }
+
+    a {
+      color: #0369a1;
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    a:hover { color: #0284c7; text-decoration: underline; }
+    a:visited { color: #7c3aed; }
+
+    header {
+      background: #ffffff;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      border-bottom: 1px solid #dbeafe;
+    }
+    header h1 { margin: 0; font-size: 2.5rem; color: #0f172a; }
+    header p  { color: #64748b; }
+
+    nav { margin-top: 1rem; }
+    nav a { margin: 0 10px; }
+
+    section {
+      background: #ffffff;
+      padding: 2rem 2.5rem;
+      max-width: 900px;
+      margin: 2rem auto;
+      border-radius: 12px;
+      border: 1px solid #dbeafe;
+      box-shadow: 0 2px 10px rgba(30, 58, 138, 0.06);
+    }
+
+    h2 {
+      color: #0f172a;
+      border-bottom: 1px solid #e0e7ef;
+      padding-bottom: 0.3rem;
+      margin-top: 0;
+    }
+    h3.year {
+      color: #64748b;
+      margin-top: 2rem;
+      font-weight: normal;
+      letter-spacing: 0.05em;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #f8fafc;
+      padding: 1rem 1.25rem;
+      border-radius: 10px;
+      border: 1px solid #e0e7ef;
+      transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      background: #eff6ff;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(30, 58, 138, 0.08);
+    }
+    .card h3 { margin-top: 0; color: #0f172a; }
+
+    /* Project write-ups (longer than cards) */
+    .project {
+      background: #f8fafc;
+      padding: 1.5rem 1.75rem;
+      border-radius: 10px;
+      border: 1px solid #e0e7ef;
+      margin-bottom: 1.5rem;
+    }
+    .project h3 { margin-top: 0; color: #0f172a; }
+    .project .funding {
+      color: #64748b;
+      font-style: italic;
+      font-size: 0.92rem;
+      margin: -0.3rem 0 1rem 0;
+    }
+    .project ul { padding-left: 1.3rem; margin: 0.5rem 0; }
+    .project ul li { margin-bottom: 0.4rem; }
+    .project .key-papers {
+      margin-top: 1rem;
+      padding-top: 0.8rem;
+      border-top: 1px dashed #cbd5e1;
+      font-size: 0.95rem;
+    }
+    .project .key-papers strong {
+      display: block;
+      color: #475569;
+      margin-bottom: 0.4rem;
+      font-size: 0.9rem;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    /* Publications list */
+    .pub-list {
+      list-style: none;
+      padding: 0;
+    }
+    .pub-list li {
+      padding: 0.9rem 0;
+      border-bottom: 1px solid #e0e7ef;
+    }
+    .pub-list li:last-child { border-bottom: none; }
+    .pub-list .title { color: #0f172a; font-weight: 600; }
+    .pub-list .me { color: #0f172a; font-weight: 600; }
+    .pub-list .venue { color: #64748b; font-style: italic; }
+    .pub-list .tag {
+      display: inline-block;
+      font-size: 0.8rem;
+      color: #92400e;
+      background: #fef3c7;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-left: 0.4rem;
+      vertical-align: middle;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Research</h1>
+  <p>Areas, publications, and ongoing projects</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#areas">Areas</a>
+    <a href="#publications">Publications</a>
+    <a href="#projects">Projects</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- ============ RESEARCH AREAS ============ -->
+<section id="areas">
+  <h2>Research Areas</h2>
+  <p>
+    My work sits at the intersection of stochastic control, sequential decision-making,
+    and networked systems, with applications ranging from wireless networks to
+    counter-drone operations and human–automation teaming.
+  </p>
+  <div class="grid">
+    <div class="card">
+      <h3>Stochastic & Decentralized Control</h3>
+      <p>Multi-timescale, hierarchical, and decentralized control architectures for cyber-physical systems.</p>
+    </div>
+    <div class="card">
+      <h3>Sequential Decision Making</h3>
+      <p>Restless multi-armed bandits, POMDPs, and rollout-based algorithms under partial observation and constraints.</p>
+    </div>
+    <div class="card">
+      <h3>Human–Automation Collaboration</h3>
+      <p>Decision referrals, workload-aware task allocation, and intent inference for mixed human–AI teams.</p>
+    </div>
+    <div class="card">
+      <h3>Communication & Networked Systems</h3>
+      <p>Scheduling and resource allocation in 5G, wireless, and energy-constrained networks.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PUBLICATIONS ============ -->
+<section id="publications">
+  <h2>Publications</h2>
+  <p>
+    A chronological list of my publications and preprints. For the most up-to-date record, see my
+    <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar profile</a>.
+    <span class="me">My name</span> is highlighted in author lists.
+  </p>
+
+  <h3 class="year">2025</h3>
+  <ul class="pub-list">
+    <li>
+      <span class="me">K. Kaza</span>, R. Anantharaman and R. Meshram.
+      <a href="https://arxiv.org/abs/2506.22971" target="_blank" rel="noopener">
+        <span class="title">Hierarchical Decentralized Stochastic Control for Cyber-Physical Systems</span>
+      </a>.
+      <span class="venue">IEEE Control Systems Letters</span>, 2025.
+    </li>
+    <li>
+      <span class="me">K. Kaza</span>, J. Le Ny and A. Mahajan.
+      <a href="https://arxiv.org/abs/2504.04248" target="_blank" rel="noopener">
+        <span class="title">Task load dependent decision referrals for joint binary classification in human–automation teams</span>
+      </a>.
+      <span class="venue">IEEE Transactions on Human-Machine Systems</span>, 2025.
+      <span class="tag">under revision</span>
+    </li>
+  </ul>
+
+  <h3 class="year">Preprints / Under Review</h3>
+  <ul class="pub-list">
+    <li>
+      <span class="me">K. Kaza</span>, V. Mehta, H. Azad, M. Bolic and I. Mantegh.
+      <a href="https://arxiv.org/abs/2409.08472" target="_blank" rel="noopener">
+        <span class="title">An Intent Modeling and Inference Framework for Autonomous and Remotely Piloted Aerial Systems</span>
+      </a>.
+      <span class="venue">IEEE Robotics and Automation Letters</span>.
+      <span class="tag">under revision</span>
+    </li>
+    <li>
+      R. Meshram and <span class="me">K. Kaza</span>.
+      <a href="https://arxiv.org/abs/2007.12933" target="_blank" rel="noopener">
+        <span class="title">Simulation Based Algorithms for Markov Decision Processes and Multi-Action Restless Bandits</span>
+      </a>.
+      <span class="tag">under revision</span>
+    </li>
+  </ul>
+
+  <h3 class="year">2024</h3>
+  <ul class="pub-list">
+    <li>
+      <span class="me">K. Kaza</span>, R. Meshram, V. Mehta and S. N. Merchant.
+      <a href="https://doi.org/10.1109/ACCESS.2024.3510558" target="_blank" rel="noopener">
+        <span class="title">Constrained Restless Bandits for Dynamic Scheduling in Cyber-Physical Systems</span>
+      </a>.
+      <span class="venue">IEEE Access</span>, 2024.
+    </li>
+  </ul>
+
+  <h3 class="year">2023</h3>
+  <ul class="pub-list">
+    <li>
+      V. Mehta, <span class="me">K. Kaza</span>, F. Dadboud, M. Bolic and I. Mantegh.
+      <span class="title">Enhancing Counter Drone Operations Through Human–AI Collaboration: A Hierarchical Decision-Making Framework</span>.
+      <span class="venue">42nd Digital Avionic Systems Conference (DASC)</span>, Barcelona, Spain, 2023.
+    </li>
+  </ul>
+
+  <h3 class="year">2022</h3>
+  <ul class="pub-list">
+    <li>
+      R. Meshram, <span class="me">K. Kaza</span>, V. Mehta and S. N. Merchant.
+      <span class="title">Restless Bandits for Scheduling in Energy Constrained Networks</span>.
+      <span class="venue">8th IEEE Indian Control Conference (ICC)</span>, Chennai, India, 2022.
+    </li>
+  </ul>
+
+  <h3 class="year">2021</h3>
+  <ul class="pub-list">
+    <li>
+      <span class="me">K. Kaza</span>, J. Le Ny and A. Mahajan.
+      <span class="title">Decision Referrals in Human–Automation Teams</span>.
+      <span class="venue">60th IEEE Conference on Decision and Control (CDC)</span>, 2021.
+    </li>
+    <li>
+      R. Meshram and <span class="me">K. Kaza</span>.
+      <span class="title">Indexability and Rollout Policy for Multi-State Partially Observable Restless Bandits</span>.
+      <span class="venue">60th IEEE Conference on Decision and Control (CDC)</span>, 2021.
+    </li>
+    <li>
+      R. Meshram and <span class="me">K. Kaza</span>.
+      <span class="title">Monte Carlo Rollout Policy for Recommendation Systems with Dynamic User Behavior</span>.
+      <span class="venue">IEEE International Conference on Communication Systems and Networks (COMSNETS)</span>, 2021.
+    </li>
+  </ul>
+
+  <h3 class="year">2019</h3>
+  <ul class="pub-list">
+    <li>
+      <span class="me">K. Kaza</span>, R. Meshram, V. Mehta and S. N. Merchant.
+      <a href="https://doi.org/10.1109/TCCN.2019.2898000" target="_blank" rel="noopener">
+        <span class="title">Sequential Decision Making with Limited Observation Capability: Application to Wireless Networks</span>
+      </a>.
+      <span class="venue">IEEE Transactions on Cognitive Communications and Networking</span>, 2019.
+    </li>
+    <li>
+      R. Meshram and <span class="me">K. Kaza</span>.
+      <a href="https://arxiv.org/abs/1910.01860" target="_blank" rel="noopener">
+        <span class="title">Online Repeated Posted Price Auctions with a Demand Side Platform</span>
+      </a>.
+      <span class="venue">Preprint</span>, 2019.
+    </li>
+  </ul>
+
+  <h3 class="year">2018</h3>
+  <ul class="pub-list">
+    <li>
+      <span class="me">K. Kaza</span>, V. Mehta, R. Meshram and S. N. Merchant.
+      <span class="title">Restless Bandits with Cumulative Feedback: Applications in Wireless Networks</span>.
+      <span class="venue">IEEE Wireless Communication and Networking Conference (WCNC)</span>, Barcelona, Spain, 2018.
+    </li>
+    <li>
+      V. Mehta, R. Meshram, <span class="me">K. Kaza</span>, S. N. Merchant and U. B. Desai.
+      <span class="title">Rested and Restless Bandits with Constrained Arms and Hidden States: Applications in Social Networks and 5G Networks</span>.
+      <span class="venue">IEEE Access</span>, vol. 6, pp. 56782–56799, 2018.
+    </li>
+    <li>
+      V. Mehta, <span class="me">K. Kaza</span>, R. Meshram and S. N. Merchant.
+      <span class="title">Restless Bandits with Constrained Arms: Application to 5G Small Cell Selection</span>.
+      <span class="venue">IEEE WCNC — Poster Session</span>, Barcelona, Spain, 2018.
+    </li>
+  </ul>
+
+  <h3 class="year">2017</h3>
+  <ul class="pub-list">
+    <li>
+      <span class="me">K. Kaza</span>, R. Meshram and S. N. Merchant.
+      <span class="title">Relay Employment Problem for Unacknowledged Transmissions: Myopic Policy and Structure</span>.
+      <span class="venue">IEEE International Conference on Communications (ICC)</span>, Paris, France, 2017.
+    </li>
+  </ul>
+
+  <h3 class="year">2016</h3>
+  <ul class="pub-list">
+    <li>
+      V. Mehta, Z. Shaikh, <span class="me">K. Kaza</span>, H. D. Mustafa and S. N. Merchant.
+      <span class="title">A Crowd-Cloud Architecture for Big Data Analytics</span>.
+      <span class="venue">22nd National Conference on Communication (NCC)</span>, Guwahati, India, 2016.
+    </li>
+  </ul>
+
+  <h3 class="year">2012</h3>
+  <ul class="pub-list">
+    <li>
+      <span class="me">K. Kaza</span>, K. Kshirsagar and K. S. Rajan.
+      <span class="title">A Bi-objective Algorithm for Dynamic Reconfiguration of Mobile Networks</span>.
+      <span class="venue">IEEE International Conference on Communications (ICC)</span>, Ottawa, Canada, 2012.
+    </li>
+  </ul>
+
+  <h3 class="year">2011</h3>
+  <ul class="pub-list">
+    <li>
+      K. Kshirsagar, <span class="me">K. Kaza</span> and K. S. Rajan.
+      <span class="title">Design of 2-level Hierarchical Ring Networks</span>.
+      <span class="venue">3rd International Congress on Ultra Modern Telecommunications and Control Systems (ICUMT)</span>, Budapest, Hungary, 2011.
+    </li>
+  </ul>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects">
+  <h2>Projects</h2>
+  <p>Detailed descriptions of past and ongoing research projects.</p>
+
+  <!-- Project 1 -->
+  <div class="project">
+    <h3>Hierarchical Decentralized Stochastic Control for Cyber-Physical Systems</h3>
+    <ul>
+      <li>Proposes a two-timescale hierarchical decentralized control architecture for Cyber-Physical Systems (CPS), with a Global Controller (GC) operating at a slower timescale and imposing budget constraints on N Local Controllers (LCs) that function at a faster timescale.</li>
+      <li>Analyzes two optimization frameworks — <em>central</em> (COpt) and <em>federal</em> (FOpt). FOpt grants greater autonomy to LCs by letting their policies be determined by local shorter-term objectives, unlike COpt, where local policies aim to maximize cumulative long-term rewards.</li>
+      <li>Establishes existence of optimal policies, convergence guarantees, and bounds on the gap between values achieved under COpt and FOpt; identifies structural conditions under which the two frameworks are equivalent.</li>
+      <li>Applicable to multi-agent decision-making in smart grids, communication networks, autonomous systems, and UAV applications. Future work targets implementation in some of these domains.</li>
+    </ul>
+    <div class="key-papers">
+      <strong>Key paper</strong>
+      <span class="me">K. Kaza</span>, R. Anantharaman, R. Meshram.
+      <a href="https://arxiv.org/abs/2506.22971" target="_blank" rel="noopener">Hierarchical Decentralized Stochastic Control for Cyber-Physical Systems</a>.
+      <em>IEEE Control Systems Letters</em>, 2025.
+    </div>
+  </div>
+
+  <!-- Project 2 -->
+  <div class="project">
+    <h3>Counter Drone Surveillance in 5G Networks</h3>
+    <p class="funding">Postdoctoral project, funded by the National Research Council Canada.</p>
+    <ul>
+      <li>Focus on detection, tracking, and intent inference of drones using cellular network infrastructure.</li>
+      <li>Developed mission-planning-based trajectory generation models for various intents (direct attack, surveillance, etc.) and kinematics/trajectory-based intent inference models to predict drone behavior.</li>
+      <li>Uses micro-Doppler radar signatures for reliable drone detection and classification.</li>
+      <li>Integrated multi-sensor fusion with human-in-the-loop feedback for robust operational decision-making.</li>
+    </ul>
+    <div class="key-papers">
+      <strong>Key papers</strong>
+      <p style="margin: 0.3rem 0;">
+        V. Mehta, <span class="me">K. Kaza</span>, F. Dadboud, M. Bolic, I. Mantegh.
+        Enhancing Counter Drone Operations Through Human–AI Collaboration.
+        <em>DASC</em>, Barcelona, 2023.
+      </p>
+      <p style="margin: 0.3rem 0;">
+        <span class="me">K. Kaza</span>, V. Mehta, H. Azad, M. Bolic, I. Mantegh.
+        <a href="https://arxiv.org/abs/2409.08472" target="_blank" rel="noopener">An Intent Modeling and Inference Framework for Autonomous and Remotely Piloted Aerial Systems</a>.
+        Under revision, <em>IEEE RA-L</em>.
+      </p>
+    </div>
+  </div>
+
+  <!-- Project 3 -->
+  <div class="project">
+    <h3>Decision Referrals in Human–Automation Teams</h3>
+    <p class="funding">Postdoctoral project, funded by the Canadian Department of National Defence under the Innovation for Defence Excellence and Security (IDEaS) program.</p>
+    <ul>
+      <li>Studies how human factors such as cognitive workload, fatigue, and trust in automation affect collaborative human–automation performance.</li>
+      <li>Considers a setting where a team performs potentially risky time-constrained classification (e.g., Hostile vs Non-Hostile). The automation observes a batch of independent tasks and may refer a subset to a human expert, whose performance depends on workload. We provide algorithms that rank tasks by risk/uncertainty and select the optimal subset for referral.</li>
+      <li>An experimental study with 43 voluntary human participants validated the effectiveness of the proposed referral schemes.</li>
+    </ul>
+    <div class="key-papers">
+      <strong>Key papers</strong>
+      <p style="margin: 0.3rem 0;">
+        <span class="me">K. Kaza</span>, J. Le Ny, A. Mahajan.
+        <a href="https://arxiv.org/abs/2504.04248" target="_blank" rel="noopener">Task load dependent decision referrals for joint binary classification in human–automation teams</a>.
+        Under revision, <em>IEEE THMS</em>, 2025.
+      </p>
+      <p style="margin: 0.3rem 0;">
+        <span class="me">K. Kaza</span>, J. Le Ny, A. Mahajan.
+        Decision Referrals in Human–Automation Teams.
+        <em>IEEE CDC</em>, 2021.
+      </p>
+    </div>
+  </div>
+
+  <!-- Project 4 -->
+  <div class="project">
+    <h3>Sequential Decision Making with Limited Observation Capability</h3>
+    <p class="funding">PhD work, funded by the Ministry of Human Resource Development, Government of India, via Teaching Assistantships.</p>
+    <ul>
+      <li>Sequential decision problems where a decision maker interacts with an environment that responds with rewards and state transitions. The goal is to maximize long-term cumulative reward. Restless multi-armed bandits are a class of such problems with seemingly independent (weakly coupled) Markovian arms.</li>
+      <li>Studies two variants where environment states are only partially observable: (1) <em>lazy restless bandits</em>, where decision instants are sparse relative to state evolution, and (2) <em>constrained restless bandits</em>, with dynamic availability constraints.</li>
+      <li>Applications include relay selection, opportunistic access in wireless networks, cyber-physical systems, and social networks.</li>
+    </ul>
+    <div class="key-papers">
+      <strong>Key papers</strong>
+      <p style="margin: 0.3rem 0;">
+        <span class="me">K. Kaza</span>, R. Meshram, V. Mehta, S. N. Merchant.
+        <a href="https://doi.org/10.1109/ACCESS.2024.3510558" target="_blank" rel="noopener">Constrained Restless Bandits for Dynamic Scheduling in Cyber-Physical Systems</a>.
+        <em>IEEE Access</em>, 2024.
+      </p>
+      <p style="margin: 0.3rem 0;">
+        <span class="me">K. Kaza</span>, R. Meshram, V. Mehta, S. N. Merchant.
+        <a href="https://doi.org/10.1109/TCCN.2019.2898000" target="_blank" rel="noopener">Sequential Decision Making with Limited Observation Capability: Application to Wireless Networks</a>.
+        <em>IEEE TCCN</em>, 2019.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 K. R. Kaza</p>
+</footer>
+
+</body>
+</html>
